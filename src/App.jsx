@@ -45,7 +45,7 @@ function App() {
   }
   return (
     <>
-      <div className="body h-screen bg-slate-100 flex items-center justify-center">
+      <div className="body h-screen w-screen bg-slate-100 flex items-center justify-center">
         <div className="card flex p-10 w-1/2 h-80 bg-white rounded-xl">
           <div className="flex flex-col w-full justify-between">
             <h1 className="text-3xl text-neutral-800 font-semibold">Currency Convertor</h1>
