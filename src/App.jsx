@@ -46,17 +46,17 @@ function App() {
   return (
     <>
       <div className="body h-screen w-screen bg-slate-100 flex items-center justify-center">
-        <div className="card flex p-10 w-1/2 h-80 bg-white rounded-xl">
-          <div className="flex flex-col w-full justify-between">
-            <h1 className="text-3xl text-neutral-800 font-semibold">Currency Convertor</h1>
-            <div className="flex justify-between">
-              <div className="flex flex-col">
+        <div className="card flex p-10 w-4/5 md:w-2/3 lg:w-1/2 max-w-[450px] md:max-w-none bg-white rounded-xl">
+          <div className="flex flex-col gap-y-6 w-full justify-between">
+            <h1 className=" text-xl md:text-3xl text-neutral-800 font-semibold">Currency Convertor</h1>
+            <div className="flex justify-between flex-col md:flex-row">
+              <div className="flex flex-col md:w-[30%]">
                 <label className="mb-2 text-sm text-gray-500 font-medium">Amount:</label>
-                <input type="number" id="number-input" name= "amount" value={amount} onChange={changeHandler} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-44 pl-6 p-2.5" required />
+                <input type="number" id="number-input" name= "amount" value={amount} onChange={changeHandler} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg pl-6 p-2.5" required />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col md:w-[30%]">
               <label htmlFor="countries" className="mb-2 text-sm text-gray-500 font-medium">From Currency:</label>
-                <select id="number-input1" value={fromCurrency}name= "fromCurrency" onChange={changeHandler} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-44 pl-6 p-2.5" required>
+                <select id="number-input1" value={fromCurrency}name= "fromCurrency" onChange={changeHandler} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg pl-6 p-2.5" required>
                 {Object.keys(rates).map(currency=>(
                   <option key={currency} value={currency}>
                   {currency}
@@ -64,9 +64,9 @@ function App() {
                 ))};
                 </select>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col md:w-[30%]">
                 <label htmlFor="countries" className="mb-2 text-sm text-gray-500 font-medium">To Currency:</label>
-                <select id="number-input2"  value={toCurrency} name="toCurrency" onChange={changeHandler} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-44 pl-6 p-2.5" required>
+                <select id="number-input2"  value={toCurrency} name="toCurrency" onChange={changeHandler} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg pl-6 p-2.5" required>
                 {Object.keys(rates).map(currency=>(
                   <option key={currency} value={currency}>
                   {currency}
@@ -75,7 +75,7 @@ function App() {
                 </select>
               </div>
             </div>
-            <h1 className="text-md font-semibold text-neutral-600 bg-sky-100 w-fit p-6 rounded-lg">Converted Amount: <span className="font-extrabold">{convertedAmount}</span></h1>
+            <h1 className="text-md font-semibold text-neutral-600 bg-sky-100 md:w-[70%] lg:w-[55%] p-6 rounded-lg">Converted Amount: <span className="font-extrabold">{convertedAmount}</span></h1>
           </div>
         </div>
       </div>
