@@ -48,7 +48,7 @@ function App() {
       <div className="body h-screen w-screen bg-slate-100 flex items-center justify-center">
         <div className="card flex p-10 w-4/5 md:w-2/3 lg:w-1/2 max-w-[450px] md:max-w-none bg-white rounded-xl">
           <div className="flex flex-col gap-y-6 w-full justify-between">
-            <h1 className=" text-xl md:text-3xl text-neutral-800 font-semibold">Currency Convertor</h1>
+            <h1 className=" text-xl md:text-3xl text-neutral-800 font-semibold">Currency Converter</h1>
             <div className="flex justify-between flex-col md:flex-row">
               <div className="flex flex-col md:w-[30%]">
                 <label className="mb-2 text-sm text-gray-500 font-medium">Amount:</label>
