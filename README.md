@@ -1,1 +1,1 @@
-# https://livecurrencyconvertor.netlify.app/
+https://livecurrencyconverter.netlify.app/
